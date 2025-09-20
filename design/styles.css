@@ -331,7 +331,7 @@ body {
 /* Promo Banner */
 .collections .promo {
   grid-column: span 2;
-  background: url('https://via.placeholder.com/600x300/003366/ffffff?text=World-Class+Garment+Sourcing') 
+  background: url('../design/images/racks.jpg') 
               center/cover no-repeat;
   color: #fff;
   display: flex;
