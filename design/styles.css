@@ -328,6 +328,56 @@ body {
   color: #333;
 }
 
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 10%;
+  background: #fff; /* change to light gray if needed */
+  text-align: center;
+}
+
+.benefit-card {
+  flex: 1;
+  max-width: 300px;
+}
+
+.benefit-card h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+}
+
+.benefit-card h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.benefit-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-card {
+    max-width: 100%;
+  }
+}
+
+
+
 /* Promo Banner */
 .collections .promo {
   grid-column: span 2;
@@ -384,7 +434,7 @@ body {
 
 
 
-/* Digital Marketing Roadmap Section */
+/* Digital Marketing Roadmap Section
 .roadmap-section {
   padding: 80px 10%;
   background: #fff;
@@ -464,7 +514,7 @@ body {
 }
 
 
-
+ */
 
 
 
