@@ -380,3 +380,312 @@ body {
     font-size: 1.4rem;
   }
 }
+
+
+
+
+/* Digital Marketing Roadmap Section */
+.roadmap-section {
+  padding: 80px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+.roadmap-section h2 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.roadmap-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+
+.roadmap-container::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #0073e6;
+  z-index: 0;
+}
+
+.roadmap-item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roadmap-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.roadmap-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.roadmap-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.roadmap-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .roadmap-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roadmap-container::before {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Process Section */
+.process {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.process h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Grid Layout */
+.process-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.videos {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Video Card */
+.video-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-card .label {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #fff;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.video-card .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,0,0,0.8);
+  color: #fff;
+  font-size: 2rem;
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.video-card .play-btn:hover {
+  background: rgba(200,0,0,0.9);
+}
+
+/* Content Side */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-box {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.content-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.content-box ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: #444;
+}
+
+.content-box p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.content-box img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media(max-width: 992px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+  .videos {
+    grid-template-rows: auto;
+  }
+}
+
+
+
+
+/* Footer Section */
+.footer {
+  background: #1a1a1a;
+  color: #f0f0f0;
+  padding: 60px 10% 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* Column Titles */
+.footer h3, .footer h4 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea,
+.newsletter-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.contact-form button,
+.newsletter-form button {
+  background: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover,
+.newsletter-form button:hover {
+  background: #005bb5;
+}
+
+/* Map */
+.map-container {
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0073e6;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
