@@ -516,7 +516,94 @@ body {
  */
 
 
+.recent-products {
+  padding: 60px 5%;
+  background: #f9f9f9;
+  text-align: center;
+}
 
+.recent-products h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: calc(300px * 5); /* 5 items (4 + 1 duplicate) */
+  animation: slide 16s infinite;
+}
+
+.product-card {
+  flex: 0 0 25%; /* 4 products visible */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Keyframe Animation */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(0); }
+  25%  { transform: translateX(-25%); }
+  45%  { transform: translateX(-25%); }
+  50%  { transform: translateX(-50%); }
+  70%  { transform: translateX(-50%); }
+  75%  { transform: translateX(-75%); }
+  95%  { transform: translateX(-75%); }
+  100% { transform: translateX(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-card {
+    flex: 0 0 50%; /* 2 visible */
+  }
+  @keyframes slide {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(0); }
+    30%  { transform: translateX(-50%); }
+    55%  { transform: translateX(-50%); }
+    60%  { transform: translateX(-100%); }
+    85%  { transform: translateX(-100%); }
+    90%  { transform: translateX(0); }
+    100% { transform: translateX(0); }
+  }
+}
+@media (max-width: 600px) {
+  .product-card {
+    flex: 0 0 100%; /* 1 visible */
+  }
+  @keyframes slide {
+    0%   { transform: translateX(0); }
+    20%  { transform: translateX(0); }
+    25%  { transform: translateX(-100%); }
+    45%  { transform: translateX(-100%); }
+    50%  { transform: translateX(-200%); }
+    70%  { transform: translateX(-200%); }
+    75%  { transform: translateX(-300%); }
+    95%  { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+  }
+}
 
 
 
